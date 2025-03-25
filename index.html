@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandana Gurram</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      min-height: 100vh; /* Ensures the body extends */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Header styles */
+    header {
+      padding: 1rem;
+      background-color: #000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin-left: 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Main content styles */
+    main {
+      flex-grow: 1; /* Allows main content to expand */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem; /* Increased padding for a longer body */
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro-paragraph {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: #f4f4f4;
+      text-align: justify;
+      text-transform: capitalize;
+      margin: 20px 0;
+      line-height: 1.8;
+    }
+
+    .social-links {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    .social-link {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-right: 1rem;
+    }
+
+    .profile-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-image img {
+      max-width: 300px;
+      max-height: 350px;
+      height: 350px;
+      width: 300px;
+    }
+
+    /* Contact Info (Hidden Initially) */
+    .contact-info {
+      display: none;
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 1rem;
+    }
+
+    .contact-info ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .contact-info ul li {
+      display: inline;
+      margin: 0 1rem;
+    }
+
+    .contact-info ul li a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://chandanaprotofilo.com/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://chandanaprotofilo.com" target="_blank" onclick="showContactInfo(); return false;">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Hello, Chandana here!</h1>
+      <p class="intro-paragraph">
+        I am Chandana Gurram, a Software Engineer with a strong interest in Python. I have hands-on experience in SQLite database connectivity, PyQt GUI development, and web technologies like HTML, CSS, and JavaScript. With a solid understanding of Object-Oriented Programming (OOP) and problem-solving techniques, I am passionate about continuously enhancing my technical skills and contributing to innovative projects in software development.
+      </p>
+      <div class="social-links">
+        <a href="https://chandanaprotofilo.com" class="social-link">Thank You!</a>
+      </div>
+      <div class="cta-buttons">
+        <a href="https://chandanaprotofilo.com/resume.pdf" class="cta-button" target="_blank">Resume</a>
+        <a href="mailto:gurramchandana9515@gmail.com" class="cta-button">gurramchandana9515@gmail.com</a>
+      </div>
+    </section>
+
+    <section class="profile-image">
+      <img src="images/IMG_2512.jpg" alt="Chandana Gurram">
+    </section>
+  </main>
+
+  <!-- Contact Information Footer (hidden initially) -->
+  <footer class="contact-info" id="contact-info">
+    <h2>Contact Me</h2>
+    <p>Follow me on:</p>
+    <ul>
+      <li><a href="https://www.instagram.com/chandana_.30/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/chandana-gurram-a8b146211/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/Chandanagoud30/frontendgallery" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function showContactInfo() {
+      var contactSection = document.getElementById('contact-info');
+      contactSection.style.display = contactSection.style.display === 'none' || contactSection.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
